@@ -22,6 +22,12 @@ def score():
         elif(btn30['text']==btn31['text'] and btn31['text']==btn32['text'] and btn30['text']!="             " and btn31['text']!="             " and btn32['text']!="             "):
                 winner=btn30['text']
                 messagebox.showinfo("Winner",winner+" wins! ")
+        elif(btn10['text']==btn21['text'] and btn21['text']==btn32['text'] and btn10['text']!="             " and btn21['text']!="             " and btn32['text']!="             "):
+                winner=btn10['text']
+                messagebox.showinfo("Winner",winner+ " wins!")
+        elif(btn12['text']==btn21['text'] and btn21['text']==btn30['text'] and btn12['text']!="             " and btn21['text']!="             " and btn30['text']!="             "):
+                winner=btn12['text']
+                messagebox.showinfo("Winner",winner+ " wins!")
         elif(btn10['text']!="             " and btn20['text']!="             " and btn30['text']!="             " and btn11['text']!="             " and btn21['text']!="             " and btn31['text']!="             " and btn12['text']!="             " and btn22['text']!="             " and btn32['text']!="             "):
                 messagebox.showinfo("Draw","Match Draw")
         
@@ -179,4 +185,5 @@ btn32.grid(row=3,column=2)
 btn1=tkinter.Button(top,text="New Game",command=newgame)
 btn1.grid(row=6,column=1)
 top.title("X & O")
+top
 top.mainloop()
